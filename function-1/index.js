@@ -5,5 +5,5 @@
  * @param {Object} res Cloud Function response context.
  */
 exports.receiveCode = (req, res) => {
-  res.send(`Hello ${req.body.name || 'World'}!`);
+  res.send(`Hello ${req.rawBody  || 'World'}!`);
 };
